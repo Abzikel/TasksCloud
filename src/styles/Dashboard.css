@@ -1,0 +1,77 @@
+/* Dashboard.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F6EFEE;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }  
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #39A2AE;
+    color: white;
+  }
+  
+  .header .nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../images/banner.jpg") center/cover no-repeat;
+    height: 60vh;
+    color: #22181C;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  
+  .cta-btn {
+    padding: 10px 20px;
+    background-color: #F5BB00;
+    color: #22181C;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .features {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .feature {
+    margin: 20px;
+    display: inline-block;
+    width: 300px;
+  }
+  
+  .feature img {
+    max-width: 100px;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
