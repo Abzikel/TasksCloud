@@ -1,0 +1,30 @@
+/* Estilo para el navbar */
+.navbar {
+    background-color: white; /* Fondo blanco */
+  }
+  
+  /* Estilo para el texto de TasksCloud */
+  .text-brand {
+    color: #22181C; /* Color del texto de TasksCloud */
+  }
+  
+  /* Estilo para el logo */
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+/* Estilo para el botón de login */
+.btn-login {
+    background-color: #39A2AE !important; /* Asegura que se aplique el color */
+    color: white !important; /* Asegura que el texto sea blanco */
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-login:hover {
+    background-color: #2B828D !important; /* Cambia el color al pasar el mouse */
+    color: white;
+  }
+  
+  
