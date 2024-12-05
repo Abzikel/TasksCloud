@@ -31,11 +31,11 @@ function Register() {
                 // Check if the user's document exists in Firestore
                 const userDoc = await getDoc(doc(db, "users", user.uid));
                 if (userDoc.exists()) {
-                    // Redirect to tasks page if document exists
-                    window.location.href = "/tasks";
+                    // Redirect to dashboard page if document exists
+                    window.location.href = "/dashboard";
                 } else {
                     // Redirect to profile completion page if document doesn't exist
-                    window.location.href = "/tasks";
+                    window.location.href = "/dashboard";
                 }
             } else {
                 // Stop spinner if no user is logged in

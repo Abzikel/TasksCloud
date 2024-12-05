@@ -33,11 +33,11 @@ function Login() {
         const userDoc = await getDoc(doc(db, "users", user.uid));
 
         if (userDoc.exists()) {
-            // If the document exists, redirect to the tasks page
-            window.location.href = "/tasks";
+            // If the document exists, redirect to the dashboard page
+            window.location.href = "/dashboard";
         } else {
             // If not, redirect to the profile completion page
-            window.location.href = "/tasks";
+            window.location.href = "/dashboard";
         }
     }, [db])
 

@@ -1,0 +1,16 @@
+/* Style for the tasks page */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Allow the content section to grow and push the footer down */
+.content-wrap {
+  flex: 1;
+}
+
+/* Spacing for small content pages */
+.footer {
+  margin-top: auto;
+}
