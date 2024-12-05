@@ -5,8 +5,7 @@ import { signOut } from "firebase/auth";
 import { auth } from "../firebase/firebase.js";
 import "./Navbar.css";
 
-const Navbar = ({ buttonText }) => {
-    // Constant to navigate through different pages
+const Navbar = ({ buttonText, showButton = true }) => {
     const navigate = useNavigate();
 
     // Handle button click from navbar
@@ -19,12 +18,10 @@ const Navbar = ({ buttonText }) => {
                     await signOut(auth);
                     navigate("/");
                 } catch (error) {
-                    // Erorr message
                     console.error("Error al cerrar sesión:", error.message);
                 }
             }
         } else {
-            // Redirect to the login
             navigate("/login");
         }
     };
@@ -39,15 +36,17 @@ const Navbar = ({ buttonText }) => {
             <div className="container d-flex justify-content-between align-items-center">
                 <div
                     className="d-flex align-items-center logo-container"
-                    onClick={handleLogoClick} // Add click handler to the logo and app name
-                    style={{ cursor: "pointer" }} // Indicate it's clickable
+                    onClick={handleLogoClick}
+                    style={{ cursor: "pointer" }}
                 >
                     <Logo className="logo-icon me-2" />
                     <h1 className="h4 m-0 text-brand">TasksCloud</h1>
                 </div>
-                <button className="btn btn-login" onClick={handleButtonClick}>
-                    {buttonText}
-                </button>
+                {showButton && (
+                    <button className="btn btn-login" onClick={handleButtonClick}>
+                        {buttonText}
+                    </button>
+                )}
             </div>
         </nav>
     );
